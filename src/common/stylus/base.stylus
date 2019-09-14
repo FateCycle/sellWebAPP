@@ -1,0 +1,29 @@
+body,html
+    line-height: 1
+    font-weight: 200
+    font-family: 'PingFang SC','STHeitiSC-Light','Arial','Helvetica-Light','sans-serif'
+
+.clearfix
+    display: inline-block
+    &:after
+        display: block
+        clear: both
+        height: 0
+        line-height: 0
+        content:''
+        visibility: hidden
+
+// 物理像素:css像素=1.5:1 即1.5个顶一个所以要把css缩放成0.7这样接近一个css像素对应一个物理像素
+@media(min-resolution:1.5dppx)
+    .border-1px
+        &:after
+            transform: scaleY(0.7)
+            -webkit-transform: scaleY(0.7)
+
+@media(max-resolution:2dppx)
+    .border-1px
+        &:after
+            transform: scaleY(0.5)
+            -webkit-transform: scaleY(0.5)
+
+
