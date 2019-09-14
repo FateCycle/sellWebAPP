@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # sellapp
 
 > sellapp
@@ -386,3 +387,7 @@ position: absolute;top: 0;left: 0;width: 100%;  占满全屏
 #### 命名
 
 text,wrapper,content,bulletin,icon,name.logo,container
+=======
+# sellWebAPP
+a takeout webapp
+>>>>>>> b0e84fed5f2f887f1aff69d6663c24929669dcc9
